@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+}
+
+.LOGO {
+  text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  font-family: "MedievalSharp", cursive;
+  font-size: 20px;
+  color: #dba362;
+  line-height: 50px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.Navbar {
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+}
+.startknop {
+  position: absolute;
+  right: 50%;
+  /* left: 400px; */
+  bottom: 40%;
+}
+.LOGO .time {
+  color: white;
+  font-family: "Cormorant Unicase", serif;
+}
+
+.startknop .naar_game {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #dba362;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.uitlegbutton {
+  position: absolute;
+  right: 50%;
+  /* left: 400px; */
+  bottom: 30%;
+}
+.uitlegbutton .uitleg_button {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #dba362;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  font-weight: bold;
+  right: 50%;
+}
+.popUp_uitleg {
+  font-family: "Cormorant Unicase", serif;
+  text-align: center;
+  background-color: rgb(172, 172, 172);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+}
+.popUp_uitleg .button_cancel {
+  width: 8rem;
+  position: absolute;
+  bottom: 12%;
+  right: 53%;
+  height: 1.5rem;
+  font-size: 13px;
+  background-color: #dba362;
+  font-weight: bold;
+  font-family: "Cormorant Unicase", serif;
+}
+
+.tijd {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  padding: 1rem 2rem;
+  font-size: 14px;
+}
+
+.Bar_background {
+  height: 15px;
+  width: 100px;
+  background-color: #af4b4b;
+}
+.Bar_inhoud {
+  text-align: center;
+  font-size: 10px;
+}
+
+/* .Hint {
+  margin-top: 40rem;
+} */
+.settings {
+  float: right;
+}
+.button_setting {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #dba362;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Button_hint {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #dba362;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Button_hint .i {
+  text-align: right;
+}
+.popUp_form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  /* right:auto; */
+  left: 250px;
+  border: 3px #f1f1f1;
+  z-index: 9;
+  text-align: center;
+  font-weight: bold;
+}
+.popUp_setting {
+  display: none;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  /* right:auto; */
+  left: 5em;
+  border: 3px #f1f1f1;
+  z-index: 9;
+  text-align: center;
+}
+.popUp_form .button_cancel {
+  background-color: #dba362;
+  margin-bottom: 10px;
+}
+.popUp_setting .naar_start {
+  background-color: #dba362;
+  margin-bottom: 10px;
+}
+.popUp_setting .naar_game {
+  background-color: #dba362;
+  margin-bottom: 10px;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f0c590;
+  color: black;
+  border-radius: 5px;
+  border-color: #af4b4b;
+  border-style: dotted;
+}
+.setting_container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f0c590;
+  color: black;
+  border-radius: 5px;
+  border-color: #af4b4b;
+  border-style: dotted;
+}
+
+.arrowButtons {
+  width: 8rem;
+  height: 2.5rem;
+
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arrowButtons .arrowUP {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 13px;
+  background-color: black;
+  font-family: "Cormorant Unicase", serif;
+}
+.arrowButtons .arrowDOWN {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 13px;
+  background-color: black;
+  font-family: "Cormorant Unicase", serif;
+}
+.arrowButtons .arrowLEFT {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 13px;
+  background-color: black;
+  font-family: "Cormorant Unicase", serif;
+}
+.arrowButtons .arrowRIGHT {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 13px;
+  background-color: black;
+  font-family: "Cormorant Unicase", serif;
+}
+
+@media only screen and (max-width: 400px) {
+  .Bar_background {
+    height: 10px;
+    width: 50px;
+  }
+  .Navbar {
+    font-size: 8px;
+  }
+  .Bar_inhoud {
+    font-size: 8px;
+  }
+  .LOGO {
+    font-size: 15px;
+    text-align: center;
+    /* width: 100%; */
+  }
+  .Button_hint {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 13px;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .button_setting {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 13px;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .startknop {
+    position: absolute;
+    right: 120px;
+    bottom: 40%;
+  }
+  .startknop .naar_game {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #dba362;
+    font-family: "Cormorant Unicase", serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .uitlegbutton {
+    position: absolute;
+    right: 120px;
+    bottom: 30%;
+  }
+  .uitlegbutton .uitleg_button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #dba362;
+    font-family: "Cormorant Unicase", serif;
+    font-size: 16px;
+    font-weight: bold;
+    right: 50%;
+  }
+  .popUp_uitleg .button_cancel {
+    width: 8rem;
+    position: absolute;
+    bottom: 12%;
+    left: 130px;
+    height: 1.5rem;
+    font-size: 13px;
+    background-color: #dba362;
+    font-weight: bold;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .popUp_uitleg {
+    font-family: "Cormorant Unicase", serif;
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .arrowButtons .arrowUP {
+    width: 4rem;
+    position: absolute;
+    bottom: 12%;
+    left: 150px;
+    height: 1.5rem;
+    font-size: 13px;
+    background-color: #dba362;
+    font-weight: bold;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .arrowButtons .arrowDOWN {
+    width: 4rem;
+    height: 1.5rem;
+    position: absolute;
+    font-size: 13px;
+    bottom: -3%;
+    right: 190px;
+    font-weight: bold;
+    background-color: #dba362;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .arrowButtons .arrowLEFT {
+    width: 4rem;
+    height: 1.5rem;
+    position: absolute;
+    font-size: 13px;
+    bottom: 5%;
+    left: 50px;
+
+    font-weight: bold;
+    background-color: #dba362;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .arrowButtons .arrowRIGHT {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 13px;
+    position: absolute;
+    bottom: 5%;
+    right: 90px;
+    font-weight: bold;
+    background-color: #dba362;
+    font-family: "Cormorant Unicase", serif;
+  }
+
+  .popUp_form {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    left: 100px;
+    border: 3px #f1f1f1;
+    z-index: 9;
+    text-align: center;
+  }
+  .popUp_setting {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    left: 100px;
+    border: 3px #f1f1f1;
+    z-index: 9;
+    text-align: center;
+  }
+  .popUp_form .button_cancel {
+    background-color: #dba362;
+    margin-bottom: 8px;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: bold;
+  }
+  .popUp_setting .naar_start .naar_game {
+    background-color: #dba362;
+    margin-bottom: 8px;
+    font-family: "Cormorant Unicase", serif;
+  }
+  .form-container {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #f0c590;
+    color: black;
+    border-radius: 5px;
+    border-color: #af4b4b;
+    border-style: dotted;
+  }
+  .setting_container {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #f0c590;
+    color: black;
+    border-radius: 5px;
+    border-color: #af4b4b;
+    border-style: dotted;
+  }
+  .popUp_form .button_cancel {
+    background-color: #dba362;
+    margin-bottom: 10px;
+    font-size: 8px;
+  }
+}

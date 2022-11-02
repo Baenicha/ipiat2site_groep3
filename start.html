@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62342a597b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Start level 2</title>
+  </head>
+  <body>
+    <header class="LOGO">
+      <h1>SIX</h1>
+    </header>
+    <section class="startknop">
+      <input
+        type="button"
+        onclick="parent.location='level3.html'"
+        class="naar_game"
+        value="Start"
+      />
+    </section>
+
+    <section class="uitlegbutton">
+      <button class="uitleg_button" onclick="krijgUitleg()" type="button">
+        Uitleg
+      </button>
+    </section>
+    <section class="popUp_uitleg" id="My_uitleg">
+      <h2>HOW TO PLAY</h2>
+      <p>
+        Je bent ontsnapt uit je celkamer, je hebt de schilderijen in de goede
+        volgorde gelegd en nu ben je aangekomen bij het laatste level! In dit
+        level zit je in een doolhof waar je zo snel mogelijk de weg moet zien te
+        vinden voordat Henry jou te pakken krijgt. Win je dit level? Hoera! Je
+        hebt jezelf kunnen redden van Henry!! Verlies je dit level....
+      </p>
+      <button type="button" class="button_cancel" onclick="closeUitleg()">
+        Close uitleg
+      </button>
+    </section>
+    <!-- </section> -->
+    <script src="main.js"></script>
+  </body>
+</html>

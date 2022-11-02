@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/62342a597b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js.js"></script> -->
+    <title>Level 3</title>
+    <style>
+      #gameCanvas {
+        box-shadow: 10px 10px 20px white;
+        display: flex;
+      }
+      .titel {
+        text-align: center;
+        font-family: "Cormorant Unicase", serif;
+      }
+      .vorm_doolhof {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        height: 100vh;
+      }
+      @media only screen and (max-width: 400px) {
+        .opMaak {
+          width: 390px;
+        }
+        .spel {
+          height: 480px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="LOGO">
+      <h1>SIX</h1>
+      <section>
+      <i class="fa-regular fa-clock"><div class='time'> 00:00</div></i>
+    </section>
+    </header>
+    <section class="Navbar">
+      <h3>Progress:</h3>
+      <section class="Bar_background">
+        <section class="Bar_inhoud">
+          <p>100%</p>
+        </section>
+      </section>
+     <!-- <section class="klok"> -->
+      <!-- <i class="fa-regular fa-clock"><div class='time'> 00:00</div></i> -->
+    
+     <!-- </section> -->
+
+    <section class="vorm_doolhof">
+      <div class="spel">
+        <h1 class="titel">Collect the keys!</h1>
+
+        <canvas class="opMaak" id="gameCanvas"></canvas>
+      </div>
+
+      <!-- <div id="aanraakDeel" class="arrowButtons">
+        <button class="arrowUP" onclick="omhoog()">UP</button>
+        <button class="arrowDOWN" onclick="omlaag()">DOWN</button>
+        <button class="arrowLEFT" onclick="rechts()">RIGHT</button>
+        <button class="arrowRIGHT" onclick="links()">LEFT</button>
+      </div> -->
+      <script src="src/Spel.js" type="module"></script>
+    </section>
+
+    <footer class="Hint">
+      <div id="aanraakDeel" class="arrowButtons">
+        <button class="arrowUP" >UP</button>
+        <button class="arrowDOWN">DOWN</button>
+        <button class="arrowLEFT" >LEFT</button>
+        <button class="arrowRIGHT" >RIGHT</button>
+      </div>
+      <button class="Button_hint" onclick="openForm()">
+        <i class="fa-solid fa-lightbulb fa-sm">Hint!</i>
+      </button>
+
+      <section class="popUp_form" id="Myform">
+        <form class="form-container">
+          <h2>Zit je vast?!</h2>
+          <p>
+            Dit level bestaat uit een doolhof, zit je vast? Met een power Up kan
+            je een guard verslaan!
+          </p>
+          <button type="button" class="button_cancel" onclick="closeform()">
+            Back to game
+          </button>
+        </form>
+      </section>
+
+      <section class="settings">
+        <button class="button_setting" onclick="openSetting()">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </section>
+      <section class="popUp_setting" id="mySetting">
+        <form class="setting_container">
+          <button
+            type="button"
+            value="stop"
+            class="naar_game"
+            onclick="naargame()"
+          >
+            Resume
+          </button>
+          <input
+            type="button"
+            onclick="parent.location='start.html'"
+            class="naar_start"
+            value="Startpage"
+          />
+        </form>
+      </section>
+    </footer>
+  </body>
+  <script  src="js.js"></script>
+  
+</html>

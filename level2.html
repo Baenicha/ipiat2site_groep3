@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+  <link rel="stylesheet" href="/css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93d5e9995e.js" crossorigin="anonymous"></script>
+  <title>SIX Level 2</title>
+</head>
+<body>
+  <div id="overlay">
+    <div id="modal">
+      <nav>
+        <ul>
+          <li><a href= "Startscherm.html">Terug naar beginscherm</a></li>
+        </ul>
+      </nav>
+      <button id="return-btn">Terug naar level</button>
+      <audio controls autoplay loop>
+        <source src="Audio/Level2.mp3" type="audio/mpeg">
+        Uw browser support het audio element niet.
+      </audio>
+    </div>
+  </div>
+  
+  <div id="overlay2">
+    <div id="modal2">
+      <p id="p1EindeLvl">Goed gedaan! Het is je gelukt de uitweg te vinden! Dit was je eindtijd van dit level:</p>
+      <i class="fa-regular fa-clock" id="clock2"><i class='timer'>00:00</i></i>
+      <nav>
+        <ul>
+          <li><a href= "start.html" id="Door-link">Door naar volgende level</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1> SIX </h1>
+    <section class="Navbar">
+      <h3>Progress:</h3>
+      <section class="Bar_background">
+        <section class="Bar-inhoud">
+          <p class="Bar-text">33%</p>
+        </section>
+      </section>
+    </section>
+    <i id="menu" class="fa-solid fa-bars"></i>>
+    <i class="fa-regular fa-clock"><i class="time"> 00:00</i></i>
+  </header>
+  <main>
+      <p>Goed gedaan, het is je gelukt om in de gangen van het kasteel te komen. Helaas ben je de weg kwijt...</p>
+      <p></p>
+      <p></p>
+      <p>Gelukkig hangen er in elke gang schilderijen. Probeer de goede volgorde van schilderijen aan te klikken die je tegen moet komen en probeer op deze manier de uitgang te vinden.</p>
+      <figure >
+            <img src="drie.png" alt="Schilderij" id="img3" data-clicked = "false">
+      </figure>
+      <figure >
+            <img src="zes.png" alt="Schilderij2" id="img6" data-clicked = "false">
+      </figure>
+      <figure >
+            <img src="een.png" alt="Schilderij3" id="img1" data-value="false">
+     </figure>
+     <figure >
+            <img src="vijf.png" alt="schilderij4" id="img5" data-clicked = "false">
+      </figure>
+      <figure >
+            <img src="vier.png" alt="Schilderij5" id="img4" data-clicked = "false">
+      </figure>
+      <figure >
+            <img src="twee.png" alt="Schilderij6" id="img2" data-clicked = "false">
+
+      </figure>
+  </main>
+  <section class="Hint">
+    <button class="Button_hint" onclick="openForm()">
+      <i class="fa-solid fa-lightbulb fa-sm">Hint!</i>
+    </button>
+  </section>
+   <section class="overlay3" id="Myform">
+    <section class="popUp_form">
+      <form class="form-container">
+        <h2>Loop je vast?!</h2>
+          <p>Kijk goed naar de schilderijen, wat kan je tellen?</p>
+            <button type="button" class="button_cancel" onclick="closeform()">Back to game</button>
+       </form>
+   </section>    
+    </section>
+  <script src="js/level2.js"></script>
+</body>
+</html>
